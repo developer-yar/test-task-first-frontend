@@ -1,0 +1,47 @@
+@import "reset.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply max-w-6xl m-auto px-4 lg:px-8;
+  }
+
+  .form-header {
+    @apply text-2xl;
+  }
+
+  .form-item {
+    @apply flex flex-col gap-2;
+  }
+
+  .input,
+  .button,
+  .textarea {
+    @apply rounded-xl py-2 px-4 text-black;
+  }
+
+  .input,
+  .textarea {
+    @apply bg-blue-50;
+  }
+
+  .input,
+  .button {
+    @apply h-12 text-sm;
+  }
+
+  .input {
+    @apply focus:bg-blue-100;
+  }
+
+  .textarea {
+    @apply bg-blue-100 w-full h-48 text-black resize-none;
+  }
+
+  .button {
+    @apply bg-blue-600 text-white transition-colors duration-300 ease-in-out hover:bg-blue-500;
+  }
+}
